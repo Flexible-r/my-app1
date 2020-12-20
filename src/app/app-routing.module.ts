@@ -12,7 +12,8 @@ const routes: Routes = [
 {path: "about",component:AboutComponent},
 {path: "login",component:LoginComponent},
 {path: "**",component:NotFoundComponent},
-
+{path: "contact", redirectTo:"/about", pathMatch:"full"},
+{path: "contacts", redirectTo:"/about", pathMatch:"full"},
 ];
 
 @NgModule({
