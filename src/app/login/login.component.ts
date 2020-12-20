@@ -10,11 +10,7 @@ export class LoginComponent implements OnInit {
     login: "",
     password: ""
   }
-  if () {
-    this.avt.login="admin";
-    this.avt.password="admin";
-    
-  }
+  
   avts: any[] = []
   constructor(private router: Router) { }
 

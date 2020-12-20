@@ -2,8 +2,7 @@
 <input placeholder="Введите пароль" [(ngModel)]="avt.password" >
 <button (click)="Vhod()">Войти</button>
 <br>
-<div *ngIf="LoggedIn; else loggedOut"> Вы вошли</div>
+<div *ngIf="avt.login=='admin'&&avt.password=='admin';else Logg">Вы вошли</div>
 <br>
-<ng-template #loggedOut>
-    Введите данные
-</ng-template>
+<ng-template #Logg>Введите данные</ng-template>
+
