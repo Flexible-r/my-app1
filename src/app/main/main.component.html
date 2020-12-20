@@ -1,0 +1,9 @@
+<input placeholder="Введите город" [(ngModel)]="model.gorod" type="text" name="gorod">
+<input placeholder="Введите страны" [(ngModel)]="model.strana" type="text">
+<button (click)="addItem()">Добавить</button>
+<br>
+<div *ngFor="let item of models">
+    {{item.gorod}}
+    <br>
+    {{item.strana}}
+</div>

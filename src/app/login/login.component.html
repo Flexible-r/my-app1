@@ -1,0 +1,9 @@
+<div><input placeholder="Введите логин" [(ngModel)]="avt.login"></div>
+<input placeholder="Введите пароль" [(ngModel)]="avt.password" >
+<button (click)="Vhod()">Войти</button>
+<br>
+<div *ngIf="LoggedIn; else loggedOut"> Вы вошли</div>
+<br>
+<ng-template #loggedOut>
+    Введите данные
+</ng-template>

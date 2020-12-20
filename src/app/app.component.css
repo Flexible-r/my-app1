@@ -1,0 +1,13 @@
+A {
+    color: red;
+    text-decoration: none;
+    border-right: 1px solid green;
+    margin-right:1px ;
+    
+   }
+   A:visited  {
+    color: red;
+   }
+   A:active {
+    color: darkblue; 
+   }
